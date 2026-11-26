@@ -3,5 +3,6 @@
 use App\Providers\AppServiceProvider;
 
 return [
-    AppServiceProvider::class,
+  AppServiceProvider::class,
+  Maatwebsite\Excel\ExcelServiceProvider::class,
 ];

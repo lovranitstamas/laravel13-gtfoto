@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fda2703c2944f738f683b08de9e0615a",
+    "content-hash": "33463e7fe7296ad78cdbfd74d26b496f",
     "packages": [
         {
             "name": "brick/math",
@@ -1586,6 +1586,86 @@
             "time": "2026-08-24T09:15:32+00:00"
         },
         {
+            "name": "jeremykenedy/laravel-roles",
+            "version": "v13.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jeremykenedy/laravel-roles.git",
+                "reference": "07cb6d912a3028fbec03dea53a541191b7c8f2a1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jeremykenedy/laravel-roles/zipball/07cb6d912a3028fbec03dea53a541191b7c8f2a1",
+                "reference": "07cb6d912a3028fbec03dea53a541191b7c8f2a1",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "5.3.*|5.4.*|5.5.*|5.6.*|5.7.*|5.8.*|6.*|7.*|8.*|^9.0|^10.0|^11.0|^12.0|^13.0",
+                "laravel/helpers": "^1.7",
+                "php": "^7.2|^8.0"
+            },
+            "require-dev": {
+                "jeremykenedy/laravel-seedster": "^1.0|^2.0",
+                "laravel/pint": "^1.18",
+                "orchestra/testbench": "^6.0|^7.0|^8.0|^9.0|^10.0|^11.0",
+                "pestphp/pest": "^2.0|^3.0|^4.0",
+                "pestphp/pest-plugin-laravel": "^2.0|^3.0|^4.0"
+            },
+            "suggest": {
+                "jeremykenedy/laravel-seedster": "Required for the roles.defaultSeeds options to auto-register the package seeders with db:seed.",
+                "jeremykenedy/laravel-ui-kit": "Set roles.uiKit.enabled to true to follow the CSS framework already configured for the UI kit."
+            },
+            "type": "package",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "jeremykenedy\\LaravelRoles\\RolesServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "jeremykenedy\\LaravelRoles\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jeremy Kenedy",
+                    "email": "jeremykenedy@gmail.com"
+                }
+            ],
+            "description": "A Powerful package for handling roles and permissions in Laravel. Supports Laravel 5.3 up to 13.",
+            "keywords": [
+                "acl",
+                "laravel",
+                "laravel-levels",
+                "laravel-permissions",
+                "laravel-roles",
+                "levels",
+                "permissions",
+                "roles"
+            ],
+            "support": {
+                "issues": "https://github.com/jeremykenedy/laravel-roles/issues",
+                "source": "https://github.com/jeremykenedy/laravel-roles/tree/v13.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/jeremykenedy",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/jeremykenedy",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2026-09-27T04:22:35+00:00"
+        },
+        {
             "name": "laravel/framework",
             "version": "v12.74.0",
             "source": {
@@ -1806,6 +1886,63 @@
                 "source": "https://github.com/laravel/framework"
             },
             "time": "2026-11-24T16:20:46+00:00"
+        },
+        {
+            "name": "laravel/helpers",
+            "version": "v1.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/helpers.git",
+                "reference": "b38daa16ea8d963635cb6a1ff09a5aa54abcdfab"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/helpers/zipball/b38daa16ea8d963635cb6a1ff09a5aa54abcdfab",
+                "reference": "b38daa16ea8d963635cb6a1ff09a5aa54abcdfab",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^12.0|^13.0",
+                "php": "^8.2"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^1.10",
+                "phpunit/phpunit": "^11.5.50|^12.5.8"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                },
+                {
+                    "name": "Dries Vints",
+                    "email": "dries@laravel.com"
+                }
+            ],
+            "description": "Provides backwards compatibility for helpers in the latest Laravel release.",
+            "keywords": [
+                "helpers",
+                "laravel"
+            ],
+            "support": {
+                "source": "https://github.com/laravel/helpers/tree/v1.10.0"
+            },
+            "time": "2026-11-11T14:11:53+00:00"
         },
         {
             "name": "laravel/prompts",

@@ -57,3 +57,27 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+## Jeremy Kennedy package
+
+- composer require "jeremykenedy/laravel-roles": "^10.0"
+- php artisan vendor:publish --tag=laravelroles-migrations
+- php artisan vendor:publish --tag=laravelroles-seeds
+- create permission file in App\Http\Helpers
+- create role file in App\Http\Helpers
+- extend User model with use HasRoleAndPermission
+- extend DatabaseSeeder file with
+
+  $this->call([
+  PermissionsTableSeeder::class,
+  RolesTableSeeder::class,
+  ConnectRelationshipsSeeder::class,
+  UsersTableSeeder::class,
+  ]);
+- modify UsersTableSeeder, only attach role, use helper file
+- create t.role in RolesTableSeeder
+- create t.permission in PermissionsTableSeeder
+- extend composer autoload node with roles.php and permissions.php files
+- extend models with Permission and Role (https://php-download.com/package/jeremykenedy/laravel-roles)
+- extend config folder with roles.php

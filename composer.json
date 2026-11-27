@@ -38,7 +38,11 @@
   "autoload-dev": {
     "psr-4": {
       "Tests\\": "tests/"
-    }
+    },
+    "files": [
+      "app/Helpers/roles.php",
+      "app/Helpers/permissions.php"
+    ]
   },
   "scripts": {
     "setup": [
